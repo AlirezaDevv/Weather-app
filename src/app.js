@@ -44,7 +44,7 @@ async function check(city) {
 
     setTimeout(() => {
       weather.style.display = "flex";
-    }, 1500);
+    }, 1000);
 
     document.querySelector(".error").children[0].style.opacity = "0";
   }

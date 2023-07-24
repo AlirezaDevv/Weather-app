@@ -7,7 +7,7 @@
 
   width: 520px;
   height: 145px;
-  transition: height 1.5s linear;
+  transition: height 1s linear;
 }
 
 .details {
@@ -22,6 +22,6 @@
 .error p {
 
 opacity: 0;
-transition: opacity 1s linear;
+transition: opacity .7s linear;
 
 }
