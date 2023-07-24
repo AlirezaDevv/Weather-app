@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  height: 650px;
+  width: 520px;
+}
+
+.details {
+  justify-content: space-between;
+}
+
+.search-box {
+  border: none;
+  outline: none;
+}

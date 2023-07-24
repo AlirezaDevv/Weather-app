@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Weather</title>
+  </head>
+  <body class="bg-slate-800">
+    <section class="flex justify-center items-center h-screen">
+      <div class="card text-white text-center px-9 py-7 rounded-xl">
+        <div class="search w-full flex items-center justify-around">
+          <input
+            class="search-box bg-green-100 py-3 px-7 h-16 rounded-3xl mx-5 w-4/6 text-lg text-slate-950"
+            type="text"
+            placeholder="enter city name"
+            spellcheck="false"
+          />
+          <button class=" searchbtn bg-green-100 w-16 h-16 rounded-full">
+            <img class="w-6 mx-auto" src="./images/search.png" alt="" />
+          </button>
+        </div>
+
+        <div class="weather w-full flex flex-col items-center mt-9">
+          <img class="weather-icon w-48" src="images/rain.png" alt="" />
+          <p class="temp my-4 text-5xl font-semibold">22°c</p>
+          <p class="city my-4 text-5xl font-semibold">New York</p>
+
+          <div class="details w-full flex mt-11">
+            <div class="col flex items-center">
+              <img class="w-14 mr-5" src="images/humidity.png" alt="" />
+
+              <div>
+                <p class="humidity text-3xl mb-3 font-semibold">50%</p>
+                <p>humidity</p>
+              </div>
+            </div>
+
+            <div class="col flex items-center">
+              <img class="w-14 mr-5" src="images/wind.png" alt="" />
+
+              <div>
+                <p class="wind text-3xl mb-3 font-semibold">15 km/h</p>
+                <p>wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
