@@ -6,6 +6,8 @@
   background: linear-gradient(135deg, #fe3b00, #5b548a);
 
   width: 520px;
+  height: 145px;
+  transition: height 1.5s linear;
 }
 
 .details {
@@ -15,4 +17,11 @@
 .search-box {
   border: none;
   outline: none;
+}
+
+.error p {
+
+opacity: 0;
+transition: opacity 1s linear;
+
 }

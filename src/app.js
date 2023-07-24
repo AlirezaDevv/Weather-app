@@ -9,8 +9,9 @@ async function check(city) {
   const response = await fetch(apiUrl + `&q=${city}` + `&appid=${apiKey}  `);
 
   if (response.status == 404) {
-    console.log(document.querySelector(".error"));
-    document.querySelector(".error").style.display = "block";
+    document.querySelector(".error").children[0].style.opacity = "1";
+    document.querySelector(".card").style.height = "145px";
+
     weather.style.display = "none";
   } else {
     let data = await response.json();
@@ -39,9 +40,13 @@ async function check(city) {
     if (data.weather[0].main == "Drizzle") {
       weather_icon.src = "images/drizle.png";
     }
+    document.querySelector(".card").style.height = "670px";
 
-    weather.style.display = "flex";
-    document.querySelector(".error").style.display = "none";
+    setTimeout(() => {
+      weather.style.display = "flex";
+    }, 1500);
+
+    document.querySelector(".error").children[0].style.opacity = "0";
   }
 }
 
