@@ -561,12 +561,24 @@ video {
   margin-top: 2.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-9 {
   margin-top: 2.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-16 {
@@ -659,6 +671,10 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -682,6 +698,10 @@ video {
   font-weight: 600;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
@@ -693,8 +713,7 @@ video {
 }
 
 .card {
-  background: linear-gradient(135deg, #00feba, #5b548a);
-  height: 650px;
+  background: linear-gradient(135deg, #fe3b00, #5b548a);
   width: 520px;
 }
 

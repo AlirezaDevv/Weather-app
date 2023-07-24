@@ -17,12 +17,18 @@
             placeholder="enter city name"
             spellcheck="false"
           />
-          <button class=" searchbtn bg-green-100 w-16 h-16 rounded-full">
+          <button class="search-btn bg-green-100 w-16 h-16 rounded-full">
             <img class="w-6 mx-auto" src="./images/search.png" alt="" />
           </button>
         </div>
 
-        <div class="weather w-full flex flex-col items-center mt-9">
+<div class="error hidden">
+
+<p class="capitalize text-left mt-4 ">Please Enter a currect city name</p>
+
+</div>
+
+        <div class="weather hidden w-full flex flex-col items-center mt-9">
           <img class="weather-icon w-48" src="images/rain.png" alt="" />
           <p class="temp my-4 text-5xl font-semibold">22°c</p>
           <p class="city my-4 text-5xl font-semibold">New York</p>
@@ -49,8 +55,6 @@
         </div>
       </div>
     </section>
-
-
     <script src="app.js"></script>
   </body>
 </html>

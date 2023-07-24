@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .card {
-  background: linear-gradient(135deg, #00feba, #5b548a);
-  height: 650px;
+  background: linear-gradient(135deg, #fe3b00, #5b548a);
+
   width: 520px;
 }
 
