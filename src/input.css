@@ -20,8 +20,23 @@
 }
 
 .error p {
+  opacity: 0;
+  transition: opacity 0.7s linear;
+}
 
-opacity: 0;
-transition: opacity .7s linear;
+.search-btn {
+  transition: all 0.2s linear;
+}
 
+.search-btn img {
+  transition: all 0.2s linear;
+}
+
+.search-btn:active {
+  width: 48px;
+  height: 48px;
+}
+
+.search-btn:active img {
+  width: 18px;
 }
